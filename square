@@ -1,0 +1,40 @@
+#case1
+
+def square_num(n):
+  return n * n
+nums = [4, 5, 2, 9]
+print("Original List: ",nums)
+result = map(square_num, nums)
+print("Square the elements of the said list using map():")
+print(list(result))
+
+excepted output:
+Original List:  [4, 5, 2, 9]
+Square the elements of the said list using map():
+[16, 25, 4, 81]
+
+#case2
+
+numbers = [4, 5, 2, 9]
+def square(number):
+  return number * number
+squared_numbers_iterator = map(square, numbers)
+squared_numbers = list(squared_numbers_iterator)
+print(squared_numbers)
+
+excepted output:
+[16, 25, 4, 81]
+
+#case3
+
+def get_squared_values(input_list):
+     squared_list = []
+     for num in input_list:
+         squared_list.append(num ** 2)
+     return squared_list
+numbers = [4,5,2,9]
+squared_numbers = get_squared_values(numbers)
+print("Squared numbers:", squared_numbers)
+
+excepted output:
+Squared numbers: [16, 25, 4, 81]
